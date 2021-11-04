@@ -1,0 +1,175 @@
+
+/* testimonial section */
+.bg-white-2 {
+    background: #fff;
+    margin-bottom: 120px;
+}
+.testimonial-container .testimonial .slider {
+    width: 550px;
+    height: 340px;
+    overflow: hidden;
+}
+.testimonial-container .testimonial .slider .slides input {
+    display: none;
+}
+.testimonial-container .testimonial .slider .slides {
+    width: 500%;
+    height: 340px;
+    display: flex;
+}
+.testimonial-container .testimonial .slider .slides .slide {
+    width: 20%;
+    height: 340px;
+    transition: all 1s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.testimonial-container .testimonial .slider .slides .slide img {
+    width: 70px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.testimonial-container .testimonial .slider .slides .slide .name {
+    font-size: 18px;
+    color: var(--PrimaryColor);
+    font-family: var(--KoHo);
+}
+.testimonial-container .testimonial .slider .slides .slide .rank {
+    margin-bottom: 10px;
+}
+.testimonial-container .testimonial .slider .slides .slide .fa-quote-left {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.testimonial-container .testimonial .slider .slides .slide .about-he {
+    margin-bottom: 10px;
+}
+.testimonial-container .testimonial {
+    width: 50%;
+}
+.testimonial-container .question {
+    width: 100%;
+}
+.testimonial-container .testimonial .naviagtion-menual{
+    display: flex;
+    justify-content: flex-start;
+    /* position: absolute; */
+    align-items: center;
+}
+.testimonial-container .testimonial .naviagtion-menual .manual1-btn {
+    margin-left: 4px;
+    background: transparent;
+    border: 2px solid var(--PrimaryColor);
+    padding: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.testimonial-container .testimonial .naviagtion-menual .manual1-btn:hover {
+    background: var(--PrimaryColor);
+}
+.testimonial-container .testimonial .navigation-auto {
+    display: flex;
+}
+#radio1:checked ~ .man1 {
+    background: var(--PrimaryColor);
+}
+#radio1:checked ~ .frist {
+    margin-left: 0;
+}
+#radio2:checked ~ .frist {
+    margin-left: -20%;
+}
+#radio3:checked ~ .frist {
+    margin-left: -40%;
+}
+#radio4:checked ~ .frist {
+    margin-left: -60%;
+}
+.testimonial-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+.testimonial-container h2 {
+    margin-bottom: 30px;
+}
+.testimonial-container h3 {
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--PrimaryColor);
+}
+.testimonial-container .question p {
+    font-family: var(--KoHo);
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    width: 100%;
+    margin-left: -20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    /* background: var(--PrimaryColor); */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.testimonial-container .question small {
+    font-size: 15px;
+    font-family: var(--poppins);
+    display: none;
+    user-select: none;
+}
+.testimonial-container .question p i {
+    margin-right: 10px;
+    padding-left: 20px;
+}
+.testimonial-container .question .ques-1.active {
+    background: var(--PrimaryColor);
+    color: #fff;
+    font-weight: 700;
+}
+.testimonial-container .question .ques-2.active {
+    background: var(--PrimaryColor);
+    color: #fff;
+    font-weight: 700;
+}
+.testimonial-container .question .ques-3.active {
+    background: var(--PrimaryColor);
+    color: #fff;
+    font-weight: 700;
+}
+.testimonial-container .question .ques-4.active {
+    background: var(--PrimaryColor);
+    color: #fff;
+    font-weight: 700;
+}
+.testimonial-container .question .ans-1.active {
+    display: inline;
+}
+.testimonial-container .question .ans-2.active {
+    display: inline;
+}
+.testimonial-container .question .ans-3.active {
+    display: inline;
+}
+.testimonial-container .question .ans-4.active {
+    display: inline;
+}
+/* testimonial section */

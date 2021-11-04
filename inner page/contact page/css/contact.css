@@ -1,0 +1,261 @@
+/* @import "./_includes/_global.css";
+@import "./_includes/_valiable.css"; */
+
+.hamburger_icon .burger {
+    width: 35px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.hamburger_icon .burger::before,
+.hamburger_icon .burger::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+header {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+header nav .nav-left {
+    display: flex;
+}
+header nav .nav-left .logo {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav .nav-left .logo  a {
+    color: #fff;
+}
+header nav .nav-left .logo a span {
+    color: var(--PrimaryColor);
+    margin-left: 2px;
+}
+header nav .nav-left ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav .nav-left ul li {
+    padding: 15px 0;
+}
+header nav .nav-left ul li a {
+    font-size: 14px;
+    margin-left: 40px;
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+    transition: var(--Trans);
+    -webkit-transition: var(--Trans);
+    -moz-transition: var(--Trans);
+    -ms-transition: var(--Trans);
+    -o-transition: var(--Trans);
+}
+header nav .nav-left ul .dropDown i {
+    margin-left: 5px;
+}
+header nav .nav-left ul .dropDown {
+    position: relative;
+
+}
+header nav .nav-left ul .dropDown_2 {
+    position: relative;
+
+}
+header nav .nav-left ul .dropDown:hover .menu {
+    display: inline;
+    
+}
+header nav .nav-left ul .dropDown_2:hover .menu_2 {
+    display: inline;
+    
+}
+header nav .nav-left ul .dropDown .menu {
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    background: rgba(0,0,0,0.4);
+    top: 100%;
+    left: 20px;
+    display: none;
+    transition: var(--Trans);
+    -webkit-transition: var(--Trans);
+    -moz-transition: var(--Trans);
+    -ms-transition: var(--Trans);
+    -o-transition: var(--Trans);
+}
+
+header nav .nav-left ul .dropDown_2 .menu_2 {
+    flex-direction: column;
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 100%;
+    display: none;
+    transition: var(--Trans);
+    -webkit-transition: var(--Trans);
+    -moz-transition: var(--Trans);
+    -ms-transition: var(--Trans);
+    -o-transition: var(--Trans);
+}
+header nav .nav-left ul .dropDown_2 .menu_2 li {
+  width: 200px;
+  height: 40px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+header nav .nav-left ul .dropDown .menu li:hover {
+    color: var(--PrimaryColor) !important;
+}
+header nav .nav-left ul .dropDown_2 .menu_2 li {
+    color: #fff;
+}
+header nav .nav-left ul .dropDown .menu li {
+  width: 200px;
+  height: 40px;
+  margin-top: 0px;
+  color: #fff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+header nav .nav-left ul .dropDown .menu li:last-child {
+    margin-bottom: 10px;
+}
+header nav .nav-left ul .dropDown_2 .menu_2 li:last-child {
+    margin-bottom: 10px;
+}
+header nav .nav-left ul a.active {
+    color: var(--PrimaryColor) !important;
+    font-weight: 700 !important;
+    pointer-events: none !important;
+}
+header nav .nav-left ul a:hover {
+    color: var(--PrimaryColor) ;
+}
+/* contact section */
+
+.contact-container {
+    width: 80%;
+    margin-top: 120px;
+}
+.contact-container h4 {
+    font-size: 16px;
+    display: inline-block;
+    margin-right: auto;
+    border-bottom: 2px solid var(--PrimaryColor);
+    margin-bottom: 20px;
+}
+.contact-container .contact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.contact-container .contact .contact-left {
+    margin-top: 80px;
+}
+.contact-container .contact .contact-left .add-bx {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.contact-container .contact .contact-left .add-bx i {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--PrimaryColor);
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.contact-container .contact .contact-left .add-bx .dt {
+    margin-left: 10px;
+}
+.contact-container .contact .contact-left .add-bx .dt h6 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.contact-container .contact .contact-left .add-bx .dt p {
+    font-size: 14px;
+    margin-top: 4px;
+}
+.contact-container .contact .contact-right {
+    width: 70%;
+}
+.contact-container .contact .contact-right .ne {
+    width: 45%;
+    margin-top: 120px;
+    height: 50px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.contact-container .contact .contact-right .sub {
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.contact-container .contact .contact-right .tx-area {
+    width: 90%;
+    height: 200px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.contact-container .contact .contact-right button {
+    margin-top: 40px;
+}
